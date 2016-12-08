@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/golfScorecard.css">
+    <link rel="icon" href="images/golfBall.png">
+    <meta charset="UTF-8">
+    <title>Golf Scorecard</title>
+</head>
+<body>
+
+<div id="container">
+    <h1>Golf Scorecard</h1>
+    <img id="golfCourseImage" alt="Golf Course Image" src="images/golfCourseWide.png">
+    <h2 id="courseTitle">Choose Your Location</h2>
+    <label id="courseSelectLabel">Golf Course:</label><select id="courseSelect" onchange="loadCourse(this.value)"><option>-</option></select>
+    <label id="teeTypesLabel">Tee Type:</label><select id="teeTypes" onchange="loadTee()"><option>-</option></select>
+    <label id="holeAmountLabel">Holes:</label><select id="holeAmount" onchange="loadHole()"><option>-</option></select>
+    <p id="chooseWarning"><em>* Must choose a course before selecting tee type or hole amount. If you don't select the amount of holes, it will default to the max amount of holes for the course.</em></p>
+</div>
+
+<div id="cardContainer">
+    <h2 id="scorecardTitle">Your Scorecard</h2>
+    <p id="changeNameMessage">Click on a player to change a name. Click off of an input to submit a name (Input limit is 15 characters). You cannot add more than 6 players.</p>
+    <div id="buttons">
+        <a id="addPlayerButton" href="javascript: addPlayer()">Initialize Card</a>
+        <a id="clearCardButton" href="javascript: clearCard()">Clear Input Data</a>
+        <a id="resetButton" href="javascript: resetCard()">Reset</a>
+    </div>
+    <!--<input id="playerCount" type="text" placeholder="Number of Players">-->
+    <div id="leftCardHeadings">
+        <h2 class="tableHeadings">Holes</h2>
+        <h2 class="tableHeadings">Yardage</h2>
+        <h2 class="tableHeadings">Par</h2>
+        <h2 class="tableHeadings">Handicap</h2>
+    </div>
+    <div id="card">
+        <div id="leftCard">
+            <p id="initialMessage">Click "Initialize Card" to create your card.</p>
+        </div>
+        <div id="rightCard">
+            <table class="table table-bordered">
+                <thead>
+                    <tr id="holes"></tr>
+                    <tr id="yardage"></tr>
+                    <tr id="par"></tr>
+                    <tr id="handicap"></tr>
+                </thead>
+                <tbody id="input"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="messages">
+    <h2 id="compareToParHeading">Compare to Par</h2>
+    <p id="messagesInfo">Your score compared to par will be displayed here.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="js/golfScorecard.js"></script>
+</body>
+</html>

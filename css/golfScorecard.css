@@ -1,0 +1,323 @@
+
+/*-------------------------------------------
+*   Basic Reset
+-------------------------------------------*/
+
+body {
+    background-image: url(../images/golf.jpg);
+    background-attachment: fixed;
+    /*background: #05B5FF;*/
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------
+*   Heading Content
+-------------------------------------------*/
+
+h1 {
+    background-color: black;
+    color: white;
+    font-family: Arial, "Times New Roman";
+    padding: 20px 41px;
+}
+
+#container {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 30px;
+}
+
+#golfCourseImage {
+    width: 100%;
+}
+
+#courseTitle {
+    margin-left: 41px;
+    margin-top: 30px;
+    margin-bottom: 41px;
+}
+
+#courseSelectLabel {
+    margin-left: 41px;
+}
+
+#courseSelect {
+    margin-left: 10px;
+}
+
+#teeTypesLabel {
+    margin-left: 25px;
+}
+
+#teeTypes {
+    margin-left: 10px;
+}
+
+#holeAmountLabel {
+    margin-left: 25px;
+}
+
+#holeAmount {
+    margin-left: 10px;
+}
+
+#chooseWarning {
+    margin-top: 40px;
+    margin-left: 41px;
+}
+
+/*--------------------------------------------------------------------
+*   Card Content Div
+--------------------------------------------------------------------*/
+
+#scorecardTitle {
+    padding: 25px 41px;
+}
+
+#changeNameMessage {
+    padding: 0 0 20px 44px;
+}
+
+#cardContainer {
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+/*-------------------------------------------
+*   Buttons
+-------------------------------------------*/
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#addPlayerButton {
+    color: black;
+    display: block;
+    background-color: #05B5FF;
+    border-radius: 20px;
+    font-family: Arial, "Times New Roman";
+    height: 50px;
+    margin: auto 0px auto 44px;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+#addPlayerButton:hover {
+    border: 2px solid dodgerblue;
+    box-sizing: border-box;
+}
+
+#resetButton {
+    color: black;
+    display: block;
+    background-color: #CC0000;
+    border-radius: 20px;
+    font-family: Arial, "Times New Roman";
+    height: 50px;
+    margin: auto 0px auto 20px;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+#resetButton:hover {
+    border: 2px solid darkred;
+    box-sizing: border-box;
+}
+
+#clearCardButton {
+    color: black;
+    display: block;
+    background-color: gold;
+    border-radius: 20px;
+    font-family: Arial, "Times New Roman";
+    height: 50px;
+    margin: auto 0px auto 20px;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+#clearCardButton:hover {
+    border: 2px solid darkgoldenrod;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------
+*   Left Card Headings
+-------------------------------------------*/
+
+#leftCardHeadings {
+    margin-left: 44px;
+    margin-top: 80px;
+    margin-bottom: -220px;
+}
+
+.tableHeadings {
+    font-family: Arial, "Times New Roman";
+    font-size: 14px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.tableHeadings:first-child {
+    margin-bottom: 23px;
+}
+
+/*-------------------------------------------
+*   Card
+-------------------------------------------*/
+
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#leftCard {
+    font-family: Arial, "Times New Roman";
+    margin: 211px 0 0 30px;
+    border-radius: 4px;
+    padding: 0px 15px 0 15px;
+}
+
+/*-------------------------------------------
+*   Right Card Data
+-------------------------------------------*/
+
+#rightCard {
+    font-family: Arial, "Times New Roman";
+    margin: 35px 100px 0 0;
+    border-radius: 4px;
+    padding: 0px 15px;
+    width: 85%;
+}
+
+table {
+    background-color: white;
+    border-spacing: 20px;
+}
+
+.tableHeader {
+    font-size: 12px;
+    padding: 10px !important;
+    text-align: center;
+    vertical-align: middle !important;
+    font-weight: bold;
+}
+
+.dataItem {
+    font-size: 12px;
+    padding: 0 !important;
+    text-align: center;
+    height: 39px;
+}
+
+.totals {
+    font-size: 12px;
+    padding: 0 !important;
+    text-align: center;
+    height: 39px;
+    font-weight: bold;
+}
+
+.input {
+    text-align: center;
+    width: 100%;
+    height: 39px;
+}
+
+/*-------------------------------------------
+*   Left Card Data
+-------------------------------------------*/
+
+.player {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.player:last-child {
+    margin: 0;
+}
+
+.name {
+    cursor: pointer;
+    display: inline;
+}
+
+.glyphicon-minus-sign {
+    color: red;
+    padding-top: 2px;
+    padding-left: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+/*-------------------------------------------
+*   Errors
+-------------------------------------------*/
+
+#errorMessage {
+    padding: 0 0 0 42px;
+}
+
+#selectCourseError {
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+#inputValidationError {
+    margin-left: 41px;
+}
+
+#playerRepeatError {
+    margin-left: 41px;
+}
+
+/*-------------------------------------------
+*   Messages Div
+-------------------------------------------*/
+
+#messages {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 30px;
+}
+
+#compareToParHeading {
+    padding: 25px 41px;
+}
+
+#messagesInfo {
+    margin-left: 41px;
+}
+
+.playerMessage {
+    margin-left: 41px;
+}
+
+/*-------------------------------------------
+*   Anchor Tags
+-------------------------------------------*/
+
+a, a:hover, a:visited, a:active, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
